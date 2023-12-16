@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture Audio</title>
+  </head>
+  <body>
+    <h1>Lecture Audio</h1>
+    <audio id="audioPlayer" controls>
+      <source id="audioSource" src="/api/audio/audio9.mp3" type="audio/mpeg" />
+    </audio>
+    <br />
+    <h1>Upload de fichier</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="upload_file" /><br />
+      <input type="submit" value="enregistrer" />
+    </form>
+  </body>
+</html>
